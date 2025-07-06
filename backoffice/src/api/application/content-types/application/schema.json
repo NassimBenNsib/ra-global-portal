@@ -1,0 +1,51 @@
+{
+  "kind": "collectionType",
+  "collectionName": "applications",
+  "info": {
+    "singularName": "application",
+    "pluralName": "applications",
+    "displayName": "Application",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Candidate": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "plugin::users-permissions.user"
+    },
+    "Documents": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files"
+      ]
+    },
+    "AIEligibilityScore": {
+      "type": "integer"
+    },
+    "Note": {
+      "type": "text"
+    },
+    "Opportunity": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::opportunity.opportunity"
+    },
+    "Status": {
+      "type": "enumeration",
+      "enum": [
+        "Pending",
+        "Accepted",
+        "Rejected",
+        "In review"
+      ],
+      "default": "Pending"
+    }
+  }
+}

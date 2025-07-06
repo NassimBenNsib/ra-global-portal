@@ -1,0 +1,12 @@
+{
+    "editor.minimap.enabled": true,
+    "editor.formatOnSave": false,
+    "files.autoSave": "off",
+    "update.mode": "none",
+    "telemetry.feedback.enabled": false,
+    "editor.quickSuggestions": {
+        "comments": "off",
+        "strings": "off",
+        "other": "off"
+    }
+}

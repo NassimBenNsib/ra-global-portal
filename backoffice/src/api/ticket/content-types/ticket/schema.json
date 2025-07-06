@@ -1,0 +1,48 @@
+{
+  "kind": "collectionType",
+  "collectionName": "tickets",
+  "info": {
+    "singularName": "ticket",
+    "pluralName": "tickets",
+    "displayName": "Ticket",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Subject": {
+      "pluginOptions": {},
+      "type": "string",
+      "required": true
+    },
+    "Description": {
+      "pluginOptions": {},
+      "type": "text",
+      "required": true
+    },
+    "Status": {
+      "pluginOptions": {},
+      "type": "enumeration",
+      "enum": [
+        "PENDING",
+        "RESOLVED",
+        "CLOSED"
+      ],
+      "default": "PENDING"
+    },
+    "Note": {
+      "pluginOptions": {},
+      "type": "text"
+    },
+    "Email": {
+      "pluginOptions": {},
+      "type": "email"
+    },
+    "Phone": {
+      "pluginOptions": {},
+      "type": "string"
+    }
+  }
+}

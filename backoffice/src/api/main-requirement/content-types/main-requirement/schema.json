@@ -1,0 +1,27 @@
+{
+  "kind": "collectionType",
+  "collectionName": "main_requirements",
+  "info": {
+    "singularName": "main-requirement",
+    "pluralName": "main-requirements",
+    "displayName": "Main Requirement"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Name": {
+      "type": "string"
+    },
+    "Description": {
+      "type": "text"
+    },
+    "Minimum": {
+      "type": "string"
+    },
+    "Required": {
+      "type": "boolean"
+    }
+  }
+}
